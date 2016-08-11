@@ -1,10 +1,7 @@
 ![Weather Underground](https://icons.wxug.com/logos/JPG/wundergroundLogo_4c_horz.jpg "Weather Underground")
 
-Alfred App Weather Underground Workflow
-===
-
 Weather Underground Alfred Workflow ( [Download v1.0](https://raw.githubusercontent.com/manifestinteractive/weather-underground-alfred-workflow/master/WeatherUnderground.alfredworkflow) )
----
+===
 
 Alfred App Workflow for [Weather Underground](https://www.wunderground.com/)
 
@@ -35,7 +32,7 @@ Commands
 
 ### Getting Weather:
 
-NOTE: Weather Underground API Searches are Cached for 5 minutes.
+**NOTE**: Weather Underground API Searches are Cached for 5 minutes.
 
 * `wu current` ( Fetch current weather for your location )
 * `wu forecast` ( Fetch 3 day forecast for your location )
