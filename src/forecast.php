@@ -11,15 +11,13 @@ if (API_KEY && WEATHER_LOCATION) {
 
     foreach ($weather->forecastday as $forecast):
         $workflow->result(
-            $forecast->date->epoch,
+            null,
             'http://www.wunderground.com' . WEATHER_LOCATION . '#horizontal-day-' . $forecast->date->yday,
             forecast_title($forecast),
             forecast_subtitle($forecast),
             weather_icon($forecast->icon)
         );
     endforeach;
-
-    uasort($workflow->results(), 'date_sort');
 
 } else if ( !API_KEY) {
     $workflow->result(

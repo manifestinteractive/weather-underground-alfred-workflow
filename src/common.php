@@ -104,16 +104,3 @@ function forecast_subtitle($fc) {
             "Precipitation: {$fc->pop}%";
     }
 }
-
-/**
- * @param $a
- * @param $b
- * @return int
- */
-function date_sort($a, $b) {
-    if ($a['arg'] === $b['arg']):
-        return 0;
-    endif;
-
-    return ($a['arg'] < $b['arg']) ? -1 : 1;
-}
